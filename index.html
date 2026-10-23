@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff1f5" />
+  <meta name="description" content="Create a magical, personalized birthday surprise with an animated cake and candles." />
+  <title>Birthday Surprise — Make their day magical</title>
+  <style>
+    :root{--pink:#ff5d8f;--deep:#8c2853;--ink:#32233b;--muted:#786b7d;--cream:#fffaf7;--line:#f2dce6;--gold:#ffca67}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:ui-rounded,"Avenir Next",Avenir,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe3ee 0,transparent 30rem),radial-gradient(circle at 96% 10%,#fff0d8 0,transparent 26rem),var(--cream);min-height:100vh}
+    button,input,textarea,select{font:inherit}button{cursor:pointer}.wrap{max-width:1100px;margin:auto;padding:0 22px}.topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.08rem;color:var(--deep);text-decoration:none}.brand-mark{width:39px;height:39px;border-radius:14px;background:linear-gradient(145deg,#ff7ca7,#ffb4c9);display:grid;place-items:center;box-shadow:0 8px 20px #f59bb444;font-size:21px}.top-link{color:var(--deep);font-weight:750;text-decoration:none;font-size:.93rem}.hero{text-align:center;padding:36px 0 26px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #f7cbd9;background:#fff9fc;color:var(--deep);border-radius:99px;padding:8px 13px;font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:.99;letter-spacing:-.055em;max-width:850px;margin:22px auto 16px}.gradient{background:linear-gradient(100deg,#e94e83,#a54ac3 70%,#ed9b50);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:610px;margin:0 auto;color:var(--muted);font-size:1.08rem;line-height:1.7}.layout{display:grid;grid-template-columns:1fr .92fr;gap:22px;align-items:start;padding:22px 0 60px}.panel{background:#ffffffd9;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 16px 50px #8d34500b;backdrop-filter:blur(10px)}.panel h2{font-size:1.25rem;margin:0 0 6px;letter-spacing:-.025em}.sub{color:var(--muted);font-size:.91rem;line-height:1.55;margin:0 0 22px}.field{margin:0 0 16px}.field label{display:block;font-size:.88rem;font-weight:800;margin:0 0 7px}.field input,.field textarea,.field select{width:100%;border:1px solid #ead7e0;border-radius:13px;padding:12px 13px;background:#fff;color:var(--ink);outline:none;transition:.18s}.field input:focus,.field textarea:focus,.field select:focus{border-color:#ed7da3;box-shadow:0 0 0 3px #ff5d8f1b}.field textarea{min-height:100px;resize:vertical;line-height:1.5}.counter{font-size:.77rem;color:var(--muted);text-align:right;margin-top:5px}.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.theme{border:1px solid var(--line);background:#fff;border-radius:14px;padding:11px 7px;text-align:center;color:var(--ink);font-weight:750;font-size:.8rem}.theme span{display:block;font-size:1.5rem;margin-bottom:5px}.theme.active{border:2px solid var(--pink);background:#fff3f7;padding:10px 6px;box-shadow:0 0 0 3px #ff5d8f13}.primary,.secondary{width:100%;border:0;border-radius:14px;padding:14px 16px;font-weight:850;transition:transform .15s,box-shadow .15s}.primary{background:linear-gradient(100deg,#f24f86,#d64c9a);color:white;box-shadow:0 10px 22px #e34e872f}.primary:hover{transform:translateY(-1px);box-shadow:0 13px 26px #e34e8744}.secondary{background:#fff1f6;color:var(--deep);border:1px solid #f3d0de;margin-top:10px}.tiny{font-size:.76rem;line-height:1.55;color:var(--muted);text-align:center;margin:12px 0 0}.preview-panel{position:sticky;top:16px;overflow:hidden}.preview-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.live{font-size:.72rem;font-weight:850;color:#21835d;background:#e9fbf2;border-radius:99px;padding:6px 9px}.scene{position:relative;min-height:385px;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 18px;text-align:center;background:linear-gradient(160deg,#ffe9f0,#fff0d9 58%,#f6e6ff);transition:background .3s}.scene.theme-night{background:linear-gradient(160deg,#242248,#624b88 60%,#bd80b5);color:white}.scene.theme-ocean{background:linear-gradient(160deg,#d8f7ff,#c7e9ff 55%,#e6e2ff)}.scene:before,.scene:after{content:'✦　·　✧　·　✦';position:absolute;color:#e99bb5;opacity:.65;letter-spacing:8px;font-size:16px;top:22px;left:10px;right:10px;pointer-events:none}.scene:after{top:auto;bottom:18px;transform:rotate(180deg)}.scene.theme-night:before,.scene.theme-night:after{color:#ffda91}.mini-tag{font-size:.7rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;opacity:.72}.scene h3{font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.1;letter-spacing:-.04em;margin:13px 0 7px;overflow-wrap:anywhere;max-width:100%}.scene .message{font-size:.91rem;line-height:1.55;max-width:310px;margin:0;overflow-wrap:anywhere}.cake-stage{height:172px;width:240px;position:relative;margin:5px 0 7px;display:grid;place-items:end center}.cake{position:relative;width:154px;height:100px;margin-bottom:14px;filter:drop-shadow(0 9px 4px #8b4b4920);animation:bob 3s ease-in-out infinite}.cake-base{position:absolute;bottom:0;left:0;width:154px;height:66px;border-radius:12px 12px 18px 18px;background:linear-gradient(90deg,#e96d93,#ffb2bf 48%,#f27f9e);border-bottom:7px solid #dc5b82}.cake-base:before{content:'';position:absolute;top:0;left:0;right:0;height:17px;border-radius:12px 12px 7px 7px;background:#fff0f2;box-shadow:0 8px 0 #ffdae2}.drip{position:absolute;top:8px;left:22px;width:13px;height:21px;border-radius:0 0 10px 10px;background:#fff0f2;box-shadow:27px 2px 0 #fff0f2,55px -1px 0 #fff0f2,83px 3px 0 #fff0f2}.berry{position:absolute;top:20px;left:69px;width:17px;height:17px;background:#d82f67;border-radius:70% 30% 65% 35%;transform:rotate(35deg);box-shadow:0 0 0 3px #ffafc0}.candle{position:absolute;z-index:2;bottom:88px;left:70px;width:10px;height:37px;border-radius:4px 4px 2px 2px;background:repeating-linear-gradient(135deg,#fff 0 5px,#f2a3c0 5px 10px);transform:translateX(-50%)}.candle.two{left:91px;height:31px;bottom:87px}.flame{position:absolute;left:50%;top:-22px;transform:translateX(-50%);height:19px;width:12px;border-radius:70% 30% 55% 45%;background:radial-gradient(ellipse at 50% 70%,#fff7b0 0 25%,#ffb52e 50%,#ff6d32 76%);box-shadow:0 0 18px #ffb338aa;transform-origin:50% 85%;animation:flicker .55s ease-in-out infinite alternate}.candle.off .flame{display:none}.plate{position:absolute;bottom:7px;left:26px;width:188px;height:13px;border-radius:50%;background:#fff9fa;box-shadow:0 4px 0 #e7b7c9}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti i{position:absolute;top:-15px;width:8px;height:12px;border-radius:3px;animation:fall 4s linear infinite;opacity:.85}.scene .hint{font-size:.75rem;opacity:.7;margin-top:7px}.preview-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}.preview-actions button{padding:12px 10px}.price-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line);margin-top:18px}.price-row strong{font-size:1.1rem;color:var(--deep)}.pill{font-size:.75rem;font-weight:800;background:#fff1d7;color:#80501c;border-radius:99px;padding:6px 9px}.share-result{display:none;margin-top:14px;border:1px dashed #e8abc1;background:#fff8fb;border-radius:14px;padding:12px}.share-result.show{display:block}.share-result label{display:block;font-weight:800;font-size:.82rem;margin-bottom:7px}.share-line{display:flex;gap:7px}.share-line input{min-width:0;flex:1;border:1px solid var(--line);border-radius:9px;padding:9px;background:white;font-size:.78rem}.share-line button{border:0;background:var(--deep);color:white;border-radius:9px;padding:9px 12px;font-weight:800;font-size:.8rem}.notice{display:none;padding:10px 12px;border-radius:11px;background:#eaf9f0;color:#216b4c;font-size:.83rem;line-height:1.45;margin-top:12px}.notice.show{display:block}.footer{padding:22px 0 35px;text-align:center;color:var(--muted);font-size:.82rem;border-top:1px solid #f0e1e7}.footer strong{color:var(--deep)}.modal-backdrop{position:fixed;inset:0;background:#24152dcc;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}.modal-backdrop.show{display:flex}.modal{background:white;border-radius:22px;padding:25px;max-width:420px;width:100%;box-shadow:0 20px 80px #0003}.modal h2{margin:0 0 8px}.modal p{color:var(--muted);line-height:1.55;font-size:.91rem}.modal .close{float:right;border:0;background:#f8edf2;border-radius:50%;width:32px;height:32px;font-size:18px}.modal .primary{margin-top:10px}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes flicker{from{rotate:-7deg;scale:.95 1.02}to{rotate:7deg;scale:1.04 .95}}@keyframes fall{to{transform:translateY(430px) rotate(620deg);opacity:.25}}
+    @media(max-width:780px){.layout{grid-template-columns:1fr}.preview-panel{position:static;grid-row:1}.hero{padding-top:22px}.panel{padding:19px}.scene{min-height:365px}.topbar{padding-top:16px}.layout{padding-top:10px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Birthday Surprise home"><span class="brand-mark">🎂</span><span>Birthday Surprise</span></a>
+      <a class="top-link" href="#creator">Create a wish <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <span class="eyebrow">✨ A little magic, made personal</span>
+        <h1>Make their birthday <span class="gradient">unforgettable.</span></h1>
+        <p>Create a tiny birthday world just for someone you love — complete with a cake, glowing candles and a message from your heart.</p>
+      </section>
+      <section class="layout" id="creator" aria-label="Birthday wish creator">
+        <div class="panel">
+          <h2>Create your birthday surprise</h2>
+          <p class="sub">Make it personal. Your preview updates as you type.</p>
+          <div class="field"><label for="recipient">Who is celebrating?</label><input id="recipient" maxlength="50" placeholder="e.g. Maya, Bestie, Dad" value="Someone Special" /></div>
+          <div class="field"><label for="sender">Your name (optional)</label><input id="sender" maxlength="50" placeholder="e.g. From Alex" /></div>
+          <div class="field"><label for="message">Your birthday message</label><textarea id="message" maxlength="280" placeholder="Write something from the heart…">Wishing you a day full of love, laughter, and beautiful surprises. You deserve all the happiness in the world! 💖</textarea><div class="counter"><span id="count">107</span>/280</div></div>
+          <div class="field"><label>Choose a birthday mood</label><div class="themes" role="group" aria-label="Birthday theme">
+            <button type="button" class="theme active" data-theme="pink" aria-pressed="true"><span>🌸</span>Sweet Pink</button>
+            <button type="button" class="theme" data-theme="night" aria-pressed="false"><span>🌙</span>Midnight</button>
+            <button type="button" class="theme" data-theme="ocean" aria-pressed="false"><span>🩵</span>Dreamy Blue</button>
+          </div></div>
+          <button class="primary" id="surpriseBtn" type="button">✨ Create my surprise link</button>
+          <p class="tiny">Free demo · No account needed · Your preview stays on this device until you share or save it.</p>
+          <div class="share-result" id="shareResult"><label for="shareUrl">Your preview link</label><div class="share-line"><input id="shareUrl" readonly aria-label="Generated preview link"/><button type="button" id="copyBtn">Copy</button></div><p class="tiny" style="text-align:left;margin-bottom:0">Demo links contain the birthday details in the URL. For permanent, private pages, connect a database before launching publicly.</p></div>
+          <div class="notice" id="notice" role="status" aria-live="polite"></div>
+          <div class="price-row"><div><strong>Premium Surprise</strong><div class="tiny" style="text-align:left;margin:4px 0 0">More themes and extra magic — coming soon</div></div><span class="pill">Planned paid feature</span></div>
+          <button type="button" class="secondary" id="premiumBtn">See premium options</button>
+        </div>
+        <div class="panel preview-panel">
+          <div class="preview-head"><div><h2>Your live preview</h2><p class="sub" style="margin:4px 0 0">A little preview of the surprise.</p></div><span class="live">● LIVE</span></div>
+          <article class="scene" id="scene" aria-label="Live birthday card preview">
+            <div class="confetti" id="confetti" aria-hidden="true"></div>
+            <span class="mini-tag">A special day for</span>
+            <h3 id="previewName">Someone Special</h3>
+            <p class="message" id="previewMessage">Wishing you a day full of love, laughter, and beautiful surprises. You deserve all the happiness in the world! 💖</p>
+            <div class="cake-stage" aria-label="Animated birthday cake with candles">
+              <div class="plate"></div><div class="cake"><div class="candle" id="candle1"><span class="flame"></span></div><div class="candle two" id="candle2"><span class="flame"></span></div><div class="cake-base"><div class="drip"></div><div class="berry"></div></div></div>
+            </div>
+            <p class="hint" id="cakeHint">Make a wish, then blow out the candles ✨</p>
+            <p id="previewSender" style="font-weight:800;font-size:.85rem;margin:9px 0 0"></p>
+          </article>
+          <div class="preview-actions"><button type="button" class="primary" id="blowBtn">💨 Blow out candles</button><button type="button" class="secondary" id="relightBtn" style="margin-top:0">🕯️ Relight candles</button></div>
+          <p class="tiny">Try it out! The cake is interactive.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Made with <span aria-label="love">💗</span> for life's little celebrations · <strong>Birthday Surprise</strong></footer>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal"><button class="close" id="closeModal" aria-label="Close">×</button><h2 id="modalTitle">Make it extra magical ✨</h2><p>Premium can include exclusive themes, photo memories, longer messages, music choices and custom animations.</p><p><strong>Payments aren't connected in this demo.</strong> Before charging customers, we'll add a secure checkout and save each birthday page in a database so the link works on any device.</p><button class="primary" id="modalOk">Sounds good</button></div>
+  </div>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const recipient = $('recipient'), sender = $('sender'), message = $('message');
+    let currentTheme = 'pink';
+    let candlesOut = false;
+    function updatePreview(){
+      const name = recipient.value.trim() || 'Someone Special';
+      $('previewName').textContent = name;
+      $('previewMessage').textContent = message.value.trim() || 'Sending you a little birthday magic. 💖';
+      $('previewSender').textContent = sender.value.trim() ? 'With love, ' + sender.value.trim() : '';
+      $('count').textContent = message.value.length;
+    }
+    [recipient,sender,message].forEach(el => el.addEventListener('input', updatePreview));
+    document.querySelectorAll('.theme').forEach(btn => btn.addEventListener('click', () => {
+      currentTheme = btn.dataset.theme;
+      document.querySelectorAll('.theme').forEach(b => {const active = b === btn; b.classList.toggle('active',active); b.setAttribute('aria-pressed',String(active));});
+      $('scene').classList.remove('theme-night','theme-ocean');
+      if(currentTheme === 'night') $('scene').classList.add('theme-night');
+      if(currentTheme === 'ocean') $('scene').classList.add('theme-ocean');
+    }));
+    function setCandles(out){
+      candlesOut = out;
+      document.querySelectorAll('.candle').forEach(c => c.classList.toggle('off',out));
+      $('cakeHint').textContent = out ? 'Wish sent into the universe! ✨' : 'Make a wish, then blow out the candles ✨';
+      if(out) burstConfetti(34);
+    }
+    $('blowBtn').addEventListener('click', () => setCandles(true));
+    $('relightBtn').addEventListener('click', () => setCandles(false));
+    function burstConfetti(amount=24){
+      const holder = $('confetti'); holder.innerHTML = '';
+      const colors = ['#ff5d8f','#ffcb68','#9b7bdb','#7bd9c2','#ff9e72','#ffffff'];
+      for(let i=0;i<amount;i++){
+        const bit = document.createElement('i');
+        bit.style.left = Math.random()*100+'%'; bit.style.background = colors[i%colors.length];
+        bit.style.animationDelay = (Math.random()*1.4)+'s'; bit.style.animationDuration = (2.5+Math.random()*2.5)+'s';
+        bit.style.transform = `rotate(${Math.random()*180}deg)`; holder.appendChild(bit);
+      }
+      setTimeout(()=>{holder.innerHTML='';},5200);
+    }
+    function getShareUrl(){
+      const data = {n:recipient.value.trim()||'Someone Special',s:sender.value.trim(),m:message.value.trim(),t:currentTheme};
+      const url = new URL(window.location.href);
+      url.search = new URLSearchParams({wish:btoa(unescape(encodeURIComponent(JSON.stringify(data))))}).toString();
+      url.hash = 'surprise'; return url.toString();
+    }
+    $('surpriseBtn').addEventListener('click', () => {
+      $('shareUrl').value = getShareUrl(); $('shareResult').classList.add('show');
+      $('notice').textContent = 'Your demo link is ready. Copy it to test the surprise page.'; $('notice').classList.add('show');
+      burstConfetti(18); $('shareResult').scrollIntoView({behavior:'smooth',block:'nearest'});
+    });
+    $('copyBtn').addEventListener('click', async () => {
+      const input = $('shareUrl');
+      try { await navigator.clipboard.writeText(input.value); $('copyBtn').textContent='Copied!'; }
+      catch(e){ input.select(); const ok = document.execCommand('copy'); $('copyBtn').textContent = ok ? 'Copied!' : 'Select & copy'; }
+      setTimeout(()=>$('copyBtn').textContent='Copy',1800);
+    });
+    function loadWishFromUrl(){
+      const raw = new URLSearchParams(window.location.search).get('wish'); if(!raw) return;
+      try {
+        const data = JSON.parse(decodeURIComponent(escape(atob(raw))));
+        recipient.value = String(data.n||'Someone Special').slice(0,50); sender.value = String(data.s||'').slice(0,50); message.value=String(data.m||'').slice(0,280); updatePreview();
+        const themeBtn = document.querySelector(`.theme[data-theme="${data.t}"]`); if(themeBtn) themeBtn.click();
+        document.title = `A birthday surprise for ${recipient.value} 🎂`;
+        $('surpriseBtn').textContent='✨ Create another surprise';
+        if(window.location.hash==='#surprise') setTimeout(()=>document.querySelector('.preview-panel').scrollIntoView({behavior:'smooth',block:'start'}),150);
+      } catch(e) { /* Ignore malformed demo link. */ }
+    }
+    $('premiumBtn').addEventListener('click', ()=>$('modalBackdrop').classList.add('show'));
+    $('closeModal').addEventListener('click', ()=>$('modalBackdrop').classList.remove('show'));
+    $('modalOk').addEventListener('click', ()=>$('modalBackdrop').classList.remove('show'));
+    $('modalBackdrop').addEventListener('click', e=>{if(e.target===$('modalBackdrop')) $('modalBackdrop').classList.remove('show')});
+    document.addEventListener('keydown', e=>{if(e.key==='Escape') $('modalBackdrop').classList.remove('show')});
+    updatePreview(); loadWishFromUrl();
+  </script>
+</body>
+</html>
